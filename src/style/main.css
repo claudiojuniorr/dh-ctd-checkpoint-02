@@ -15,6 +15,12 @@
     position: absolute;
     bottom: 10px;
 }
+.visual-effect {
+    transition: 1s !important;
+}
+.visual-effect:hover{
+    background-color: rgba(39, 39, 39, 0.788) !important;
+}
 .scroll {
     margin:4px, 4px;
     padding:4px;
