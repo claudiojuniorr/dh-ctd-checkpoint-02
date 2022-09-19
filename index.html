@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,17 @@
     <link rel="stylesheet" href="./src/style/main.css">
 </head>
 
-<body>
-    <header class="d-flex bg-black bg-gradient  p-3 fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
+    <header class="d-flex bg-black bg-gradient p-3 fixed-top">
         <div class="container-lg d-inline-flex justify-content-between align-items-center">
             <div class="brand">
-                <span class="fs-1 fw-bold text-white">Digital</span>
-                <span class="fs-1 fw-bold text-danger">Cine</span>
+                <a href="/">
+                    <span class="fs-1 fw-bold text-white"><img src="./src/img/brand/icons8-óculos-3d-96 2.png"
+                            class="navbar-brand" alt="logo"> Digital</span>
+                    <span class="fs-1 fw-bold text-danger">Cine</span>
+                </a>
             </div>
-            <nav class="navbar navbar-dark navbar-expand-md">
+            <nav class="navbar navbar-dark navbar-expand-md" id="navbar">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -26,33 +30,31 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#carousel">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#filmes">Filmes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <button type="button" class="btn btn-dark btn-sm mt-1" data-bs-toggle="modal"
+                                data-bs-target="#login">Login</button>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <section class="container-fluid bg-black bg-gradient">
+    <section class="container-fluid bg-black bg-gradient full-view ">
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="1000">
-                    <img src="https://capas-m.imagemfilmes.com.br/164805_000_m.jpg" class="d-block carousel-img"
-                        alt="...">
+                <div class="carousel-item active position-relative" data-bs-interval="1000">
+                    <img src="./src/img/film-catalog/a-casa-do-medo.jpg" class="d-block carousel-img">
                 </div>
                 <div class="carousel-item" data-bs-interval="1000">
-                    <img src="https://capas-m.imagemfilmes.com.br/164940_000_m.jpg" class="d-block carousel-img"
-                        alt="...">
+                    <img src="./src/img/film-catalog/furia-em-alto-mar.jpg" class="d-block carousel-img">
                 </div>
                 <div class="carousel-item" data-bs-interval="1000">
-                    <img src="https://capas-m.imagemfilmes.com.br/164009_000_m.jpg" class="d-block carousel-img"
-                        alt="...">
+                    <img src="./src/img/film-catalog/maligno.jpg" class="d-block carousel-img">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -65,10 +67,10 @@
             </button>
         </div>
     </section>
-    <section class="container-fluid bg-black bg-gradient ">
-        <h1 class="fs-1 fw-bold text-white text-center p-5 p-5" id="filmes">Filmes</h1>
-        <div class="d-flex gap-3 flex-wrap justify-content-center align-items-center">
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+    <section class="container-fluid bg-black bg-gradient" id="filmes">
+        <h1 class="fs-1 fw-bold text-white text-center p-5 p-5">Filmes</h1>
+        <div class="d-flex gap-4 pb-5 flex-wrap justify-content-center align-items-center">
+            <div class="card text-bg-light card-min-height card-responsive border border-dark">
                 <div class="image">
                     <img src="src/img/film-catalog/hellboy.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -85,10 +87,12 @@
                             terrível ameaça.
                         </p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+            <div class="card text-bg-light card-min-height card-responsive">
                 <div class="image">
                     <img src="src/img/film-catalog/maligno.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -103,10 +107,12 @@
                             medida em que tenta descobrir o que há de errado com ele.
                         </p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+            <div class="card text-bg-light card-min-height card-responsive">
                 <div class="image">
                     <img src="src/img/film-catalog/eu-acredito.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -121,10 +127,12 @@
                             notícia na cidade.
                         </p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+            <div class="card text-bg-ligh card-min-height card-responsive">
                 <div class="image">
                     <img src="src/img/film-catalog/a-casa-do-medo.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -142,10 +150,12 @@
                             ele precisa escapar da ira do sequestrador que busca vingança.
                         </p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+            <div class="card text-bg-light card-min-height card-responsive">
                 <div class="image">
                     <img src="src/img/film-catalog/furia-em-alto-mar.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -161,10 +171,12 @@
                             Mundial se inicie.
                         </p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+            <div class="card text-bg-light card-min-height card-responsive">
                 <div class="image">
                     <img src="src/img/film-catalog/desejo-de-matar.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -178,10 +190,12 @@
                             terá que se aventurar por caminhos obscuros em uma jornada pessoal em busca de justiça.
                         </p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+            <div class="card text-bg-light card-min-height card-responsive">
                 <div class="image">
                     <img src="src/img/film-catalog/na-selva.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -195,10 +209,12 @@
                             levará para uma das mais assustadoras jornadas de suas vidas.
                             Baseado em uma história real.</p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="card text-bg-light mb-3 card-min-height card-responsive">
+            <div class="card text-bg-light card-min-height card-responsive">
                 <div class="image">
                     <img src="src/img/film-catalog/o-poder-e-o-impossivel.jpg" class="card-img-top card-img" alt="...">
                 </div>
@@ -214,7 +230,9 @@
                             Baseado em uma história real e no livro de grande sucesso.
                         </p>
                     </div>
-                    <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    <div class="card-footer d-flex justify-content-center">
+                        <a href="#" class="visual-effect btn text-light bg-dark a-card">Ver mais</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,22 +249,22 @@
                     <div class="link d-flex justify-content-start gap-3">
                         <a href="https://www.linkedin.com/in/cla%C3%BAdio-ribeiro-junior-00783a230/"
                             target="_blank"><img class="social-network" src="src/img/social-network/linkedin.jpg"
-                                alt=""></a>
+                                alt="Linkedin"></a>
                         <a href="https://github.com/claudiojuniorr" target="_blank"><img class="social-network"
-                                src="src/img/social-network/github.png" alt=""></a>
+                                src="src/img/social-network/github.png" alt="Github"></a>
                     </div>
                 </div>
                 <div class="container-student mt-2 mb-2">
                     <div
                         class="info-responsive d-flex justify-content-center flex-column text-center align-items-center">
-                        <p class="text-center student">Segundo Aluno</p>
-                        <p class="responsibility text-center">Responsável pelo desenvolvimento do...</p>
+                        <p class="text-center student">Cauê Souza</p>
+                        <p class="responsibility text-center">Responsável pelo desenvolvimento do carrosel, modal e header</p>
                     </div>
                     <div class="link d-flex justify-content-center gap-3">
-                        <a href="" target="_blank"><img class="social-network" src="src/img/social-network/linkedin.jpg"
-                                alt=""></a>
-                        <a href="" target="_blank"><img class="social-network" src="src/img/social-network/github.png"
-                                alt=""></a>
+                        <a href="https://www.linkedin.com/in/caue-souza-a1546245/" target="_blank"><img
+                                class="social-network" src="src/img/social-network/linkedin.jpg" alt="Linkedin"></a>
+                        <a href="https://github.com/cauesooouza" target="_blank"><img class="social-network"
+                                src="src/img/social-network/github.png" alt="Github"></a>
                     </div>
                 </div>
                 <div class="container-student mt-2 mb-2">
@@ -256,9 +274,9 @@
                     </div>
                     <div class="link d-flex justify-content-end gap-3">
                         <a href="" target="_blank"><img class="social-network" src="src/img/social-network/linkedin.jpg"
-                                alt=""></a>
+                                alt="Linkedin"></a>
                         <a href="" target="_blank"><img class="social-network" src="src/img/social-network/github.png"
-                                alt=""></a>
+                                alt="Github"></a>
                     </div>
                 </div>
             </div>
@@ -268,6 +286,70 @@
             <p>Checkpoint 2</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- LOGIN MODAL -->
+    <div class="modal fade" id="login" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fs-2 fw-bold text-dark">Login</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="input-group flex-nowrap mb-2">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario">
+                    </div>
+                    <div class="input-group flex-nowrap mb-2">
+                        <input type="password" class="form-control" placeholder="Senha" aria-label="Usuario">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#register">Cadastre-se</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER MODAL -->
+    <div class="modal fade" id="register" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fs-2 fw-bold text-dark">Registre-se</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Nome</span>
+                        <input type="text" aria-label="First name" class="form-control" required>
+                        <span class="input-group-text">Sobrenome</span>
+                        <input type="text" aria-label="Last name" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Celular</span>
+                        <input type="tel" aria-label="celular" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Email</span>
+                        <input type="email" aria-label="email" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Senha</span>
+                        <input type="password" aria-label="senha" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
