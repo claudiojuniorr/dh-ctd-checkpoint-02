@@ -34,23 +34,24 @@ a {
 
 .card {
     position: relative;
-    background-color: #000;
-    min-height: 26rem;
     border: 1px solid white;
 }
 
 .card .img-fluid {
     width: 100%;
-    min-height: 28rem;
-    cursor: pointer;
+    height: 26rem;
     border-radius: 5px;
+    border: 1px solid white;
 }
 @keyframes animation-film {
     0% {
-        opacity: 0;
+        transform: scale(0, 0);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
     }
     100% {
-        opacity: 1;
+        transform: scale(1, 1);
     }
 }
 .card  .backgroud {
@@ -60,8 +61,7 @@ a {
     border-radius: 5px;
     background-color: rgba(39, 1, 1, 0.747);
     width: 100%;
-    min-height: 28rem;
-    opacity: 0;
+    height: 100%;
 
 }
 
@@ -76,9 +76,7 @@ a {
 .card:hover .backgroud  {
     display: block;
     visibility: visible;
-    animation-name: animation-film;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    animation: animation-film 0.5s ease;
 }
 .container-student {
     max-width: 200px;
@@ -104,13 +102,16 @@ a {
     cursor: pointer;
 }
 
+@media (min-width: 1440px){
+    .card .img-fluid {
+        height: 33rem;
+    }
+}
 @media (max-width: 991px) {
     .d-none {
         display: flex !important;
     }
 }
-
-
 @media (max-width: 888px) {
     .footer-responsive {
         flex-direction: column;
@@ -127,52 +128,27 @@ a {
         text-align: start !important;
     }
 }
-
+@media (max-width: 768px) {
+    .card .img-fluid {
+        height: 15rem;
+    }
+    .card .backgroud .you-tube a img {
+        width: 50px;
+        margin-top: 20px;
+    }
+    .card .backgroud .sinopse a {
+        font-size: .625rem;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+}
 @media (max-width: 425px) {
     .mobile {
         display: none;
     } 
-    .card {
-        min-height: 15rem;
-    }
     .card .img-fluid {
-        min-height: 15rem;
-    }
-    .card  .backgroud {
-        min-height: 24.9rem;
-    }
-    .card .backgroud .you-tube a img {
-        width: 50px;
-        margin-top: 20px;
-    }
-    .card .backgroud .sinopse a {
-        font-size: .625rem;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        margin-top: 50px;
-    }
-}
-@media (max-width: 375px) {
-
-    .card {
-        min-height: 20rem;
-    }
-    .card .img-fluid {
-        min-height: 20rem;
-    }
-    .card  .backgroud {
-        min-height: 20rem;
-    }
-    .card .backgroud .you-tube a img {
-        width: 50px;
-        margin-top: 20px;
-    }
-    .card .backgroud .sinopse a {
-        font-size: .625rem;
-        height: 20px;
-        display: flex;
-        align-items: center;
-        margin-top: 50px;
+        min-height: 25rem;
     }
 }
