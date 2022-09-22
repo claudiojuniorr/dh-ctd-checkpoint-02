@@ -132,14 +132,5 @@ a {
 @media (max-width: 425px) {
     .mobile {
         display: none;
-    }
-    .card {
-        width: 200px !important;
-        height: 50px !important;
-    }
-    .card .img-fluid {
-        width: 200px !important;
-        height: 50px !important;
-    }
-    
+    } 
 }
