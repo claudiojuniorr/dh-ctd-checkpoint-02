@@ -152,3 +152,19 @@ a {
         min-height: 25rem;
     }
 }
+@media (max-width: 375px) {
+    .mobile {
+        display: none;
+    } 
+    .card .img-fluid {
+        min-height: 20rem;
+    }
+}
+@media (max-width: 320px) {
+    .mobile {
+        display: none;
+    } 
+    .card .img-fluid {
+        min-height: 15rem;
+    }
+}
