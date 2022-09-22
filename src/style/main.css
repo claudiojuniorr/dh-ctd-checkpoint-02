@@ -33,21 +33,54 @@ a {
 }
 
 .card {
+    position: relative;
     background-color: #000;
+    min-height: 26rem;
+    border: 1px solid white;
 }
 
 .card .img-fluid {
-    max-height: 21.875rem;
-    transition: 0.5s;
+    width: 100%;
+    min-height: 26rem;
     cursor: pointer;
-    opacity: 0.6;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+@keyframes animation-film {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.card  .backgroud {
+    display: none;
+    position: absolute;
+    visibility: hidden;
+    border-radius: 5px;
+    background-color: rgba(39, 1, 1, 0.747);
+    width: 100%;
+    height: 414.4px;
+    opacity: 0;
+
 }
 
-.card .img-fluid:hover {
+.card .backgroud .you-tube a img{
+    max-width: 60px;
+    width: 100%;
+    text-align: center;
+}
+.card .backgroud .you-tube:hover a img {
     transform: scale(1.1);
-    opacity: 1;
 }
-
+.card:hover .backgroud  {
+    display: block;
+    visibility: visible;
+    animation-name: animation-film;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
 .container-student {
     max-width: 200px;
     min-height: 100px;
@@ -100,4 +133,13 @@ a {
     .mobile {
         display: none;
     }
+    .card {
+        width: 200px !important;
+        height: 50px !important;
+    }
+    .card .img-fluid {
+        width: 200px !important;
+        height: 50px !important;
+    }
+    
 }
