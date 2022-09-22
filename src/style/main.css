@@ -41,10 +41,9 @@ a {
 
 .card .img-fluid {
     width: 100%;
-    min-height: 26rem;
+    min-height: 28rem;
     cursor: pointer;
     border-radius: 5px;
-    border: 1px solid white;
 }
 @keyframes animation-film {
     0% {
@@ -61,7 +60,7 @@ a {
     border-radius: 5px;
     background-color: rgba(39, 1, 1, 0.747);
     width: 100%;
-    min-height: 26rem;
+    min-height: 28rem;
     opacity: 0;
 
 }
@@ -140,7 +139,30 @@ a {
         min-height: 15rem;
     }
     .card  .backgroud {
-        min-height: 15rem;
+        min-height: 24.9rem;
+    }
+    .card .backgroud .you-tube a img {
+        width: 50px;
+        margin-top: 20px;
+    }
+    .card .backgroud .sinopse a {
+        font-size: .625rem;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 375px) {
+
+    .card {
+        min-height: 20rem;
+    }
+    .card .img-fluid {
+        min-height: 20rem;
+    }
+    .card  .backgroud {
+        min-height: 20rem;
     }
     .card .backgroud .you-tube a img {
         width: 50px;
