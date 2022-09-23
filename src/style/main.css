@@ -43,18 +43,22 @@ a {
     border-radius: 5px;
     border: 1px solid white;
 }
+
 @keyframes animation-film {
     0% {
         transform: scale(0, 0);
     }
+
     50% {
         transform: scale(1.1, 1.1);
     }
+
     100% {
         transform: scale(1, 1);
     }
 }
-.card  .backgroud {
+
+.card .backgroud {
     display: none;
     position: absolute;
     visibility: hidden;
@@ -65,19 +69,22 @@ a {
 
 }
 
-.card .backgroud .you-tube a img{
+.card .backgroud .you-tube a img {
     max-width: 60px;
     width: 100%;
     text-align: center;
 }
+
 .card .backgroud .you-tube:hover a img {
     transform: scale(1.1);
 }
-.card:hover .backgroud  {
+
+.card:hover .backgroud {
     display: block;
     visibility: visible;
     animation: animation-film 0.5s ease;
 }
+
 .container-student {
     max-width: 200px;
     min-height: 100px;
@@ -114,16 +121,30 @@ a {
     justify-content: center;
 }
 
-@media (min-width: 1440px){
+.transition {
+    transition: transform 0.5s;
+}
+
+.fadeUp {
+    transform: translate(0,-100%)
+}
+
+.fadeDown {
+    transform: none;
+}
+
+@media (min-width: 1440px) {
     .card .img-fluid {
         height: 33rem;
     }
 }
+
 @media (max-width: 991px) {
     .d-none {
         display: flex !important;
     }
 }
+
 @media (max-width: 888px) {
     .footer-responsive {
         flex-direction: column;
@@ -140,14 +161,17 @@ a {
         text-align: start !important;
     }
 }
+
 @media (max-width: 768px) {
     .card .img-fluid {
         height: 15rem;
     }
+
     .card .backgroud .you-tube a img {
         width: 50px;
         margin-top: 20px;
     }
+
     .card .backgroud .sinopse a {
         font-size: .625rem;
         height: 25px;
@@ -156,26 +180,32 @@ a {
         margin-top: 40px;
     }
 }
+
 @media (max-width: 425px) {
     .mobile {
         display: none;
-    } 
+    }
+
     .card .img-fluid {
         min-height: 25rem;
     }
 }
+
 @media (max-width: 375px) {
     .mobile {
         display: none;
-    } 
+    }
+
     .card .img-fluid {
         min-height: 20rem;
     }
 }
+
 @media (max-width: 320px) {
     .mobile {
         display: none;
-    } 
+    }
+
     .card .img-fluid {
         min-height: 15rem;
     }
