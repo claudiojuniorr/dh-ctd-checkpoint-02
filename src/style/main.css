@@ -102,6 +102,18 @@ a {
     cursor: pointer;
 }
 
+.js-required {
+    z-index: 9999;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (min-width: 1440px){
     .card .img-fluid {
         height: 33rem;
