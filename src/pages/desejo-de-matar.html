@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Cine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body class="bg-black" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
+    <noscript>
+        <div class="js-required">
+            Javascript é necessario para que a pagina funcione corretamente
+        </div>
+    </noscript>
+    <header class="d-flex bg-black bg-gradient p-3 fixed-top transition fadeDown">
+        <div class="container-lg d-inline-flex justify-content-between align-items-center">
+            <div class="brand">
+                <a href="#">
+                    <span class="fs-1 fw-bold text-white"><img src="../img/brand/icons8-óculos-3d-96 2.png"
+                            class="navbar-brand" alt="logo"> Digital</span>
+                    <span class="fs-1 fw-bold text-danger">Cine</span>
+                </a>
+            </div>
+
+
+            <!-- Desktop nav  -->
+            <nav class="navbar navbar-dark navbar-expand-lg" id="navbar">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#filmes">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-dark p-2 me-2" data-bs-toggle="modal"
+                                data-bs-target="#login">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-danger p-2" data-bs-toggle="modal"
+                                data-bs-target="#register">Cadastre-se</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile nav  -->
+        <nav class="navbar navbar-dark d-none">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark bg-black bg-gradient" tabindex="-1"
+                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="brand">
+                        <a href="#">
+                            <img src="../img/brand/icons8-óculos-3d-96 2.png" class="navbar-brand mt-1" alt="logo">
+                        </a>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#filmes">Filmes</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-dark btn-lg mb-2" data-bs-toggle="modal"
+                            data-bs-target="#login">Login</button>
+                        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#register">Cadastre-se</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="mt-5 container-fluid bg-black full-view d-flex justify-content-center align-items-center">
+        <iframe 
+            class="trailer mt-5"
+            src="https://www.youtube.com/embed/e1hIXEClwBQ" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>    
+    </section>
+    <section class="border bg-black container-fluid full-view m-0">
+        <div class="border container-fluid d-flex col ">
+            <div class="container">
+                <h2 class="fs-1 fw-bold text-danger text-start m-4">Sinopse</h2>
+                <div class="container-fluid">
+                    <p class="text-white text-justify">
+                        Após ter sua casa invadida e a esposa assassinada por bandidos, 
+                        Paul passa a acompanhar a polícia nas investigações para capturar os 
+                        criminosos. Em poucos dias, percebe que a polícia jamais encontrará os 
+                        assassinos. Sem opções, terá que se aventurar por caminhos obscuros em 
+                        uma jornada pessoal em busca de justiça.
+                    </p>
+                </div>
+                <h2 class="fs-1 fw-bold text-danger text-start m-4">Crítica</h2>
+                <div class="container-fluid">
+                    <p class="text-white text-justify">
+                        Mesmo em 1974, o discurso de um filme como Desejo de Matar, então 
+                        protagonizado por Charles Bronson, soava completamente ultrapassado. 
+                        Em plena ebulição contracultural estadunidense, tínhamos um protagonista 
+                        convertido, a fórceps, de um liberalismo mal desenhado na telona ao ímpeto 
+                        justiceiro, após uma tragédia familiar. Sabe o bom e velho “espera acontecer 
+                        com alguém próximo de você”, sentença retórica de quem geralmente ataca 
+                        qualquer defensor dos direitos humanos? Pois é, a produção justamente 
+                        defendia a legitimidade de atos bárbaros, desde que motivados por 
+                        infortúnios pessoais. Eli Roth, cuja carreira sinaliza predileção pelo 
+                        horror, mais precisamente sua veia exploitation, foi incumbido de fazer o 
+                        remake daquele sucesso do passado. O protagonista não é mais arquiteto, mas 
+                        médico. Sai Bronson e entra Bruce Willis, outro brucutu carismático e 
+                        talentoso. O resultado, porém, não difere essencialmente muito do original, 
+                        embora lhe seja bem superior cinematograficamente.
+                    </p>
+                </div>
+            </div>
+            <div class="border container-fluid d-flex row flex-wrap">
+                <div class="d-flex container-fluid d-flex align-items-center flex-wrap">
+                    <img class="card-film img-fluid" src="../img/film-catalog/action/desejo-de-matar.jpg" alt="">
+                    <div class="container-sm col">
+                        <ul>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Direção:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">Eli Roth</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Título original:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">Death Wish</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Gênero:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">Ação, Crime, Drama</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Ano:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">2018</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-sm">
+                    <h2 class=" fs-2 fw-bold text-danger text-start pt-2 mx-4">Elenco:</h2>
+                    <div class="flex-wrap row pt-2">
+                        <div class="card cast-film">
+                            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSItxlkc_a8e3O3T59cqB6Uw5iPRY5bJlmr8ZUt0KRPLObKcdTd" class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Bruce Willis</p>
+                                <p class="lh-1 card-text text-center text-white">(Paul Kersey)</p>
+                            </div>
+                        </div>
+                        <div class="card cast-film">
+                            <img src="https://images.mubicdn.net/images/cast_member/4304/cache-939-1522564456/image-w856.jpg?size=800x" class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Elisabeth Shue</p>
+                                <p class="lh-1 card-text text-center text-white">(Lucy)</p>
+                            </div>
+                        </div>
+                        <div class="card cast-film">
+                            <img src="https://limaomecanico.com.br/wp-content/uploads/2017/04/dean-norris.jpg" class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Dean Norris</p>
+                                <p class="lh-1 card-text text-center text-white">(Detetive Rains)</p>
+                            </div>
+                        </div>
+                        <div class="card cast-film">
+                            <img src="https://images.mubicdn.net/images/cast_member/3528/cache-7088-1478101707/image-w856.jpg?size=800x" class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Vincent D'Onofrio</p>
+                                <p class="lh-1 card-text text-center text-white">(Frank Kersey)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <footer class="bg-black bg-gradient p-3 text-light">
+        <hr>
+        <div class="container-fluid py-3">
+            <div class="footer-responsive d-flex flex-wrap justify-content-between">
+                <div class="container-student mt-2 mb-2">
+                    <div class="d-flex justify-content-start flex-column">
+                        <span class="text-start student">Claúdio Ribeiro Junior</span>
+                        <span class="responsibility mb-1">Responsável pelo desenvolvimento do carrosel do card, do card
+                            e do footer</span>
+                    </div>
+                    <div class="link d-flex justify-content-start gap-3">
+                        <a href="https://www.linkedin.com/in/cla%C3%BAdio-ribeiro-junior-00783a230/"
+                            target="_blank"><img class="social-network" src="../img/social-network/linkedin.jpg"
+                                alt="Linkedin"></a>
+                        <a href="https://github.com/claudiojuniorr" target="_blank"><img class="social-network"
+                                src="../img/social-network/github.png" alt="Github"></a>
+                    </div>
+                </div>
+                <div class="container-student mt-2 mb-2">
+                    <div
+                        class="info-responsive d-flex justify-content-center flex-column text-center align-items-center">
+                        <span class="text-center student">Cauê Souza</span>
+                        <span class="responsibility text-center mb-1">Responsável pelo desenvolvimento do carrosel,
+                            modal e
+                            header</span>
+                    </div>
+                    <div class="link d-flex justify-content-center gap-3">
+                        <a href="https://www.linkedin.com/in/caue-souza-a1546245/" target="_blank"><img
+                                class="social-network" src="../img/social-network/linkedin.jpg" alt="Linkedin"></a>
+                        <a href="https://github.com/cauesooouza" target="_blank"><img class="social-network"
+                                src="../img/social-network/github.png" alt="Github"></a>
+                    </div>
+                </div>
+                <div class="container-student mt-2 mb-2">
+                    <div class="info-responsive d-flex justify-content-end flex-column text-end align-items-end">
+                        <span class="text-end student">Terceiro Aluno</span>
+                        <span class="text-end responsibility mb-1">Responsável pelo desenvolvimento do...</span>
+                    </div>
+                    <div class="link d-flex justify-content-end gap-3">
+                        <a href="" target="_blank"><img class="social-network" src="../img/social-network/linkedin.jpg"
+                                alt="Linkedin"></a>
+                        <a href="" target="_blank"><img class="social-network" src="../img/social-network/github.png"
+                                alt="Github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            &copy 2022 Copyright: <a href="#">DigitalCine</a>
+            <p>Checkpoint 2</p>
+        </div>
+    </footer>
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fs-2 fw-bold text-dark">Login</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="input-group flex-nowrap mb-2">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario">
+                    </div>
+                    <div class="input-group flex-nowrap mb-2">
+                        <input type="password" class="form-control" placeholder="Senha" aria-label="Usuario">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal fade" id="register" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fs-2 fw-bold text-dark">Registre-se</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Nome</span>
+                        <input type="text" aria-label="First name" class="form-control" required>
+                        <span class="input-group-text">Sobrenome</span>
+                        <input type="text" aria-label="Last name" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Celular</span>
+                        <input type="tel" aria-label="celular" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Email</span>
+                        <input type="email" aria-label="email" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Senha</span>
+                        <input type="password" aria-label="senha" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+        <script src="./src/script/main.js"></script>
+</body>
+
+</html>

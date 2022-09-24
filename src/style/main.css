@@ -131,6 +131,34 @@ a {
 .fadeDown {
     transform: none;
 }
+.page-sinopse {
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+.trailer {
+    width:860px; 
+    height:515px;
+}
+.card-film {
+    width: 300px;
+    height: 350px;
+
+}
+.text-justify {
+    text-align: justify;
+}
+.cast-film{
+    width: 150px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.cast-film img {
+    width: 120px;
+    height: 120px;
+}
 
 @media (min-width: 1440px) {
     .card .img-fluid {
