@@ -132,10 +132,8 @@ a {
     transform: none;
 }
 .page-sinopse {
-    display: flex;
-    flex-wrap: wrap;
-
-    
+    width: 100%;
+    height: 100vh; 
 }
 .trailer {
     width:860px; 
