@@ -133,14 +133,19 @@ a {
 }
 .page-sinopse {
     width: 100%;
-    height: 100vh; 
+    min-height: 100vh; 
+}
+.container-md-dh {
+    max-width: 650px;
+    width: 100%;
+    margin: 10px;
 }
 .trailer {
     width:860px; 
     height:515px;
 }
 .card-film {
-    width: 300px;
+    max-width: 300px;
     height: 350px;
 
 }
@@ -185,6 +190,10 @@ a {
     .responsibility {
         text-align: start !important;
     }
+    .trailer {
+        width: 710px;
+        height: 500px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -214,6 +223,10 @@ a {
     .card .img-fluid {
         min-height: 25rem;
     }
+    .trailer {
+        width: 410px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -223,6 +236,10 @@ a {
 
     .card .img-fluid {
         min-height: 20rem;
+    }
+    .trailer {
+        width: 310px;
+        height: 200px;
     }
 }
 
