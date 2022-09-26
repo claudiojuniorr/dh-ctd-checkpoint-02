@@ -1,19 +1,19 @@
 body {
     scrollbar-width: thin;          
-    scrollbar-color: red black;
+    scrollbar-color: rgb(220,53,69) rgb(0,0,0);
 }
 body::-webkit-scrollbar {
     width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-    background: black;
+    background: rgb(0,0,0);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: red;
+    background-color: rgb(220,53,69);
     border-radius: 20px;
-    border: 3px solid black;
+    border: 3px solid rgb(0,0,0);
 }
 
 a {
