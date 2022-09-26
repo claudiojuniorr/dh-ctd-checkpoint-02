@@ -1,3 +1,21 @@
+body {
+    scrollbar-width: thin;          
+    scrollbar-color: red black;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
 a {
     text-decoration: none;
     color: inherit;
