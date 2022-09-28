@@ -208,6 +208,10 @@ h1.title {
     max-height: 6rem;
 }
 
+.title h1 { 
+    font-size: 1.2rem !important;
+}
+
 .desc {
     color: #9d9d9d;
 }
