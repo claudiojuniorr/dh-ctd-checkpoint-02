@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brinquedo Assassino</title>
+    <link rel="icon" type="image/x-icon" href="/dh-ctd-checkpoint-02/src/img/brand/icons8-óculos-3d-96 2.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body class="bg-black" data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
+    <noscript>
+        <div class="js-required">
+            Javascript é necessario para que a pagina funcione corretamente
+        </div>
+    </noscript>
+    <header class="d-flex bg-black bg-gradient p-3 fixed-top transition fadeDown">
+        <div class="container-lg d-inline-flex justify-content-between align-items-center">
+            <div class="brand">
+                <a href="../../index.html">
+                    <span class="fs-1 fw-bold text-white"><img src="../img/brand/icons8-óculos-3d-96 2.png"
+                            class="navbar-brand" alt="logo"> Digital</span>
+                    <span class="fs-1 fw-bold text-danger">Cine</span>
+                </a>
+            </div>
+
+
+            <!-- Desktop nav  -->
+            <nav class="navbar navbar-dark navbar-expand-lg" id="navbar">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#filmes">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-dark p-2 me-2" data-bs-toggle="modal"
+                                data-bs-target="#login">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-danger p-2" data-bs-toggle="modal"
+                                data-bs-target="#register">Cadastre-se</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile nav  -->
+        <nav class="navbar navbar-dark d-none">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark bg-black bg-gradient" tabindex="-1"
+                id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <div class="brand">
+                        <a href="#">
+                            <img src="../img/brand/icons8-óculos-3d-96 2.png" class="navbar-brand mt-1" alt="logo">
+                        </a>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#filmes">Filmes</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-dark btn-lg mb-2" data-bs-toggle="modal"
+                            data-bs-target="#login">Login</button>
+                        <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#register">Cadastre-se</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-lg bg-black full-view margin-top p-5">
+        <div class="row">
+            <h1 class="title">Brinquedo Assassino</h1>
+        </div>
+        <div class="row-cols-2 d-flex justify-content-between flex-wrap">
+            <div class="col desc">
+                <p>Título original: Child's Play</p>
+                <p>Duração 1 h 30 min</p>
+            </div>
+            <div class="col-lg-1 col-md-2 d-flex flex-column align-items-center text-end">
+                <div class="row desc">Avaliação</div>
+                <div class="row desc"><img src="../img/icons/star.png" alt="star" class="ico">5,7</div>
+            </div>
+        </div>
+        <div class="row ">
+            <iframe class="trailer mt-5" src="https://www.youtube.com/embed/eeuuXupBN3E" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="bg-black page-sinopse d-flex m-0 flex-wrap">
+        <div class="conteiner-md-dh d-flex col flex-wrap justify-content-center">
+            <div class="container-md-dh">
+                <h2 class="fs-1 fw-bold text-danger text-start m-4">Sinopse</h2>
+                <div class="container-fluid">
+                    <p class="text-white text-justify">
+                        Andy (Gabriel Bateman) e sua mãe se mudam para uma nova cidade em 
+                        busca de um recomeço. Preocupada com o desinteresse do filho em fazer 
+                        novos amigos, Karen (Aubrey Plaza) decide dar a ele de presente de 
+                        aniversário um boneco tecnológico que, além de ser o companheiro ideal 
+                        para crianças e propor diversas atividades lúdicas, executa funções da 
+                        casa sob comandos de voz. Os problemas começam a surgir quando o boneco 
+                        Chuck se torna extremamente possessivo em relação a Andy e está disposto 
+                        a fazer qualquer coisa para afastar o garoto das pessoas que o amam.
+                    </p>
+                </div>
+                <h2 class="fs-1 fw-bold text-danger text-start m-4">Crítica</h2>
+                <div class="container-fluid">
+                    <p class="text-white text-justify">
+                        O novo Brinquedo Assassino não é um filme que pretende se levar a sério, 
+                        mas também não assume completamente seu lado frívolo. Diferente daquele 
+                        de 1988, Chucky agora é mais do que um boneco, é uma inteligência artificial 
+                        criada pela empresa Kaslan, que, numa referência clara às multinacionais do ramo 
+                        tecnológico, preza pela integração total de seus serviços. Por isso, Buddi — nome 
+                        comercial do produto, antes de ser batizado pelos respectivos donos — vai além das 
+                        funções lúdicas, ele é um "companheiro para toda a família" e executa ações básicas 
+                        no ambiente familiar, como apagar e acender luzes, ligar e desligar a televisão e 
+                        até acionar o aplicativo de carros da empresa, semelhante ao Uber. Há uma intenção 
+                        óbvia, porém pouco aprofundada, de questionar a obsessão atual por lançamentos 
+                        tecnológicos e o consumo desenfreado em massa, uma característica que muito tem sido 
+                        associada à antolog
+                    </p>
+                </div>
+            </div>
+            <div class="container-md-dh d-flex row flex-wrap align-items-center">
+                <div class="d-flex container-fluid d-flex align-items-center justify-content-center flex-wrap m-0 p-0">
+                    <img class="mx-4 card-film img-fluid " src="../img/film-catalog/horror/brinquedo-assassino.jpg" alt="">
+                    <div class="container-fluid col flex-wrap mt-3">
+                        <ul>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Direção:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">Lars Klevberg</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Título original:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">Child's Play</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Gênero:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">Terror, Suspense, Mistério, Suspense psicológico</span>
+                                </div>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <div class="col-xs-4">
+                                    <label class="text-white fw-bold">Ano:</label>
+                                </div>
+                                <div class="col-xs-9 ms-3">
+                                    <span class="text-white">2019</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <h2 class=" fs-2 fw-bold text-danger text-start pt-2 mx-4">Elenco:</h2>
+                    <div class="flex-wrap row pt-2 container-fluid m-0 p-0 justify-content-center">
+                        <div class="card cast-film">
+                            <img src="https://musicimage.xboxlive.com/catalog/video.contributor.20fc6400-0200-11db-89ca-0019b92a3933/image?locale=pt-br&target=circle"
+                                class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Tim Matheson</p>
+                                <p class="lh-1 card-text text-center text-white">(Henry Kaslan)</p>
+                            </div>
+                        </div>
+                        <div class="card cast-film">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZjVmYzViZGItNGI0Ni00ZTI3LTllMWEtOWEyYTFjYTA3M2Y5XkEyXkFqcGdeQXVyMzYxNTIzODg@._V1_UX178_CR0,0,178,264_AL_.jpg"
+                                class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Zahra Anderso</p>
+                                <p class="lh-1 card-text text-center text-white">(Mom)</p>
+                            </div>
+                        </div>
+                        <div class="card cast-film">
+                            <img src="data:image/jpeg;base64,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"
+                                class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Ben Daon</p>
+                                <p class="lh-1 card-text text-center text-white">(Ben)</p>
+                            </div>
+                        </div>
+                        <div class="card cast-film">
+                            <img src="https://m.media-amazon.com/images/M/MV5BZWQwM2QxZDUtNGY3Mi00YmZmLTkxMDUtYzBhMGQxNTVkNjI5XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_.jpg"
+                                class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Serge Jaswal</p>
+                                <p class="lh-1 card-text text-center text-white">(Dad)</p>
+                            </div>
+                        </div>
+                        <div class="card cast-film">
+                            <img src="https://br.web.img2.acsta.net/pictures/19/09/05/22/02/5550478.jpg"
+                                class="card-img-top" alt="...">
+                            <div>
+                                <p class="lh-sm card-text text-center text-white">Aubrey Plaza</p>
+                                <p class="lh-1 card-text text-center text-white">(Karen)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black bg-gradient p-3 text-light">
+        <hr>
+        <div class="px-5 container-fluid py-3">
+            <div class="footer-responsive d-flex flex-wrap justify-content-between">
+                <div class="container-student mt-2 mb-2">
+                    <div class="d-flex justify-content-start flex-column">
+                        <span class="text-start student">Claúdio Ribeiro Junior</span>
+                        <span class="responsibility mb-1">Responsável pelo desenvolvimento do carrosel do card, do card
+                            e do footer</span>
+                    </div>
+                    <div class="link d-flex justify-content-start gap-3">
+                        <a href="https://www.linkedin.com/in/cla%C3%BAdio-ribeiro-junior-00783a230/"
+                            target="_blank"><img class="social-network" src="../img/social-network/linkedin.jpg"
+                                alt="Linkedin"></a>
+                        <a href="https://github.com/claudiojuniorr" target="_blank"><img class="social-network"
+                                src="../img/social-network/github.png" alt="Github"></a>
+                    </div>
+                </div>
+                <div class="container-student mt-2 mb-2">
+                    <div class="info-responsive d-flex justify-content-end flex-column text-end align-items-end">
+                        <span class="text-end student">Cauê Souza</span>
+                        <span class="text-end responsibility mb-1">Responsável pelo desenvolvimento do carrosel,
+                            modal e
+                            header</span>
+                    </div>
+                    <div class="link d-flex justify-content-end gap-3">
+                        <a href="https://www.linkedin.com/in/caue-souza-a1546245/" target="_blank"><img
+                                class="social-network" src="../img/social-network/linkedin.jpg" alt="Linkedin"></a>
+                        <a href="https://github.com/cauesooouza" target="_blank"><img class="social-network"
+                                src="../img/social-network/github.png" alt="Github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            &copy 2022 Copyright: <a href="#">DigitalCine</a>
+            <p>Checkpoint 2</p>
+        </div>
+    </footer>
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fs-2 fw-bold text-dark">Login</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+                <div class="modal-body">
+                    <div class="input-group flex-nowrap mb-2">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario">
+                    </div>
+                    <div class="input-group flex-nowrap mb-2">
+                        <input type="password" class="form-control" placeholder="Senha" aria-label="Usuario">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal fade" id="register" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="fs-2 fw-bold text-dark">Registre-se</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Nome</span>
+                        <input type="text" aria-label="First name" class="form-control" required>
+                        <span class="input-group-text">Sobrenome</span>
+                        <input type="text" aria-label="Last name" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Celular</span>
+                        <input type="tel" aria-label="celular" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Email</span>
+                        <input type="email" aria-label="email" class="form-control" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Senha</span>
+                        <input type="password" aria-label="senha" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="./src/script/main.js"></script>
+</body>
+
+</html>
