@@ -1,6 +1,7 @@
 body {
     scrollbar-width: thin;
     scrollbar-color: rgb(220, 53, 69) rgb(0, 0, 0);
+    overflow-x:hidden ;
 }
 
 body::-webkit-scrollbar {
