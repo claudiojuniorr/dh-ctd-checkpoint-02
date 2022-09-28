@@ -79,6 +79,7 @@ a {
 }
 
 .card .backgroud {
+    display: none;
     position: absolute;
     visibility: hidden;
     border-radius: 5px;
@@ -193,23 +194,16 @@ a {
 .margin-top {
     margin-top: 130px;
 }
-
+.font-size-title {
+    font-size: 1.5625rem;
+}
 .ico {
     width: 50px;
 }
 
-h1.title {
-    font-size: 4rem;
-    color: rgb(212, 212, 212);
-}
-
 .title {
-    height: auto;
-    max-height: 6rem;
-}
-
-.title h1 { 
-    font-size: 1.2rem !important;
+    font-size: 4rem;
+    color: #d3d3d3;
 }
 
 .desc {
@@ -271,6 +265,9 @@ h1.title {
         display: flex;
         align-items: center;
         margin-top: 40px;
+    }
+    .font-size-title {
+        font-size: .9375rem;
     }
 }
 
