@@ -1,4 +1,4 @@
-![Logo](https://claudiojuniorr.github.io/dh-ctd-checkpoint-02/src/img/brand/logo.png)
+![Digital Cine Logo](https://claudiojuniorr.github.io/dh-ctd-checkpoint-02/src/img/brand/logo.png)
 
 
 # Checkpoint 02 - Front end I
