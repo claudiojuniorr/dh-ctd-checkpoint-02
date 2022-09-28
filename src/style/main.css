@@ -79,7 +79,6 @@ a {
 }
 
 .card .backgroud {
-    display: none;
     position: absolute;
     visibility: hidden;
     border-radius: 5px;
@@ -199,9 +198,14 @@ a {
     width: 50px;
 }
 
-.title {
+h1.title {
     font-size: 4rem;
     color: rgb(212, 212, 212);
+}
+
+.title {
+    height: auto;
+    max-height: 6rem;
 }
 
 .desc {
